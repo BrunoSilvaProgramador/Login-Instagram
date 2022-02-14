@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(65, 63, 63);
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: rgb(65, 63, 63);
+}
+::-webkit-scrollbar-thumb {
+    background: #222121;
+    border-radius: 9px;
+}
+
+.center{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+body{
+    overflow: hidden ;
+    background: linear-gradient(to bottom right, yellow, orange, pink, rgb(230, 8, 219), rgb(230, 8, 219), purple, rgb(86,8,230));
+}
+.lang{
+    width: 100%;
+    background-color: transparent;
+    padding-bottom: 80px;
+}
+.header{
+    width: 100%;
+    background-color: transparent;
+    padding: 10px 0;
+}
+.main{
+    width: 100%;
+    background-color: transparent;
+    padding-bottom: 20px;
+}
+.footer{
+    width: 100%;
+    background-color: transparent;
+}
+.lang select{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.header h1{
+    font-family: 'Lucida Calligraphy';
+}
+.dados{
+    width: 80%; 
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.dados input{
+    margin-top: 10px;
+    padding: 6px;
+    background-color: rgba(247, 247, 247, 0.3);
+    border: 1px solid rgb(212, 211, 211);
+    color: white;
+}
+.dados button{
+    margin-top: 10px;
+    padding: 6px;
+    border: 1px solid rgb(212, 211, 211);
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+.dados button:hover{
+    background-color: rgba(247, 247, 247, 0.3);
+}
+.dados ::placeholder{
+    color: white;
+}
+.ajuda{
+    margin: 15px auto;
+    color: white;
+    line-height: 20px;
+    padding-top: 20px;
+}
+.ajuda a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+.ajuda a:hover{
+    color: rgb(179, 179, 179);
+}
+.ou{
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    margin: 0 auto;
+    justify-content: space-between;
+    color: white;
+    padding: 20px 0;
+    padding-bottom: 40px;
+}
+.divisão{
+    width: 45%;
+    height: 1px;
+    background-color: white;
+    margin-top: 9px;
+    
+}
+
+.entrar-com-facebook{
+    display: inline-block;
+    padding-bottom: 50px;
+}
+.entrar-com-facebook img{
+    width: 30px;
+}
+.entrar-com-facebook a{
+    position: relative;
+    top: -9px;
+    text-decoration: none;
+    color: white;
+}
+.entrar-com-facebook a:hover{
+    color: rgb(179, 179, 179);
+}
+.cadastrar a{
+    text-decoration: none;
+    color: white;
+}
+.cadastrar a:hover{
+    color: rgb(179, 179, 179);
+}
+.cadastrar{
+    color: white;
+    padding: 5.5px;
+}
+
+@media screen and (max-width: 350px){
+    .header h1{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width: 240px){
+    .header h1{
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width: 400px) and (min-height: 500px) and (max-height: 700px){
+    .center{
+        width: 90%;
+    }
+    .entrar-com-facebook{
+        padding-bottom: 10px;
+    }
+    .cadastrar{
+        padding-top: 0px;
+    }
+    .lang{
+        padding-bottom: 20px;
+    }
+    .dados input:first-child{
+        margin-top: 0px;
+        
+    }
+}
